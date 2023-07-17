@@ -1,16 +1,14 @@
 import './App.css';
+import Navbar from './Navbar';
+import HomePage from './Home';
 
 function App() {
-  const title = "welcome to new blog";
-  const likes = 50;
-  const googleLink = "http://google.com";
 
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>{ title }</h1>
-        <p>Linked  { likes } times</p>
-        <a href={googleLink}> Go to Google</a>
+        <HomePage />
       </div>
     </div>
   );
