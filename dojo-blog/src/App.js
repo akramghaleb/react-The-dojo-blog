@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import HomePage from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import CreateBlog from './Createblog';
+import BlogDetails from './BlogDetails';
 
 function App() {
 
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route  path="/create">
               <CreateBlog />
+            </Route>
+            <Route  path="/blogs/:id">
+              <BlogDetails />
             </Route>
             </Switch>
         </div>
